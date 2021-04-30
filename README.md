@@ -1,5 +1,5 @@
 # ETL-Project
-<img src="Images/Covid19.jpg" width="200%" />
+<img src="Images/Covid19.jpg" width="170%" />
 
 ## Extraction
 
