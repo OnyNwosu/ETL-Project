@@ -1,4 +1,14 @@
 # ETL-Project
+![microscopic image of Covid-19 virus](Images/Covid19.jpg)
+
+## Extraction
+
+
+## Transformation
+
+
+## Load
+
 
 sources: 
     - Vaccination Progress: https://www.kaggle.com/gpreda/covid-world-vaccination-progress
