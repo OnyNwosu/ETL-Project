@@ -21,6 +21,8 @@ Given the current pandemic, we decided to base our ETL project on the amount of 
     - [Quick Database Diagrams](https://www.quickdatabasediagrams.com/) was used to create a visualization roadmap of how we would organize our data.
         - The ERD was put together to show the tables that make up the database along with the corresponding primary keys.
 
+![ERD of Tables](Images/ERD.png)
+
 - ### Covid Cases
     - Performed an inner-merge between the pop table and the cases table on the "Country" field.  This was done to bring in the population size of all countries listed on the cases dataset.  
     - The next step was to rename all of the column headers.
