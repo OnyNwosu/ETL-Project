@@ -1,5 +1,5 @@
 # ETL-Project
-![microscopic image of Covid-19 virus](Images/Covid19.jpg)
+<img src="Images/Covid19.jpg" width="200%" />
 
 ## Extraction
 
