@@ -22,10 +22,12 @@ Given the current pandemic, we decided to base our ETL project on the amount of 
         - The ERD was put together to show the tables that make up the database along with the corresponding primary keys.
 
 - ### Covid Cases
-    - 
+    - Performed an inner-merge between the pop table and the cases table on the "Country" field.  This was done to bring in the population size of all countries listed on the cases dataset.  
+    - The next step was to rename all of the column headers.
+    - A new Population table was stored as a data-frame by removing duplicate entries for Population and Country from the Cases table above. 
 
 - ### Vaccine Distributions
-    - baskb
+    - 
 
 
 ## Load
