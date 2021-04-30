@@ -1,13 +1,19 @@
 # ETL-Project
 <img src="Images/Covid19.jpg" width="100%" />
 
+Given the current pandemic, we decided to base our ETL project on the amount of global Covid-19 cases since Janurary of 2020 to present day and the distribution of the Covid-19 vaccines from December of 2020. 
 ## Extraction
-
+When pulled our Covid-19 cases data from the dataset repository site, [Kaggle](https://www.kaggle.com/gpreda/covid-world-vaccination-progress).
 
 ## Transformation
 
 
 ## Load
+
+
+
+
+
 
 
 sources: 
