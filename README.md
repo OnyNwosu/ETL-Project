@@ -3,7 +3,7 @@
 
 Given the current pandemic, we decided to base our ETL project on the amount of global Covid-19 cases since January of 2020 to present day and the distribution of the Covid-19 vaccines from December of 2020. 
 ## Extraction
-- We pulled our Covid-19 cases data from the dataset repository site, [Kaggle](https://www.kaggle.com/gpreda/covid-world-vaccination-progress).  We also used [Kaggle](https://www.kaggle.com/gpreda/covid-world-vaccination-progress) to pull Vaccine distribution data. 
+- We pulled our Covid-19 cases data from the dataset repository site, [Kaggle](https://www.kaggle.com/josephassaker/covid19-global-dataset).  We also used [Kaggle](https://www.kaggle.com/gpreda/covid-world-vaccination-progress) to pull Vaccine distribution data. 
      - The preview functionality of this data helped us in determining to use it since it allowed us to view and edit the columns to ensure that it contained the information that we wanted. 
     - The data pulled was formatted as a CSV file. 
 - The last source of data extraction was using the 'List of countries and dependencies by population' [Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population) page to pull population data.
@@ -29,6 +29,14 @@ Given the current pandemic, we decided to base our ETL project on the amount of 
     - A new Population table was stored as a data-frame by removing duplicate entries for Population and Country from the Cases table above. 
 
 - ### Vaccine Distributions
+    - Downloaded the following dataset from Kaggle -> country_vaccinations_by_manufacturer.csv.
+    - The dataset was stored as a dataframe to be able to read it in Pandas
+    - Vaccine manufacturer names were standardized into 4-character IDs as follows:
+        - 'Pfizer/BioNTech' : ['PFZR'],
+        - 'Sinovac' : ['SNVC'],
+        - 'Moderna' : ['MDRN'],
+        - 'Oxford/AstraZeneca' : ['OXFD'],
+        - 'Johnson&Johnson' : ['JSJS']
     - 
 
 
