@@ -30,17 +30,36 @@ Given the current pandemic, we decided to base our ETL project on the amount of 
 
 - ### Vaccine Distributions
     - Downloaded the following dataset from Kaggle -> country_vaccinations_by_manufacturer.csv.
-    - The dataset was stored as a dataframe to be able to read it in Pandas
+    - The vaccine dataset was stored as a dataframe (vax_man_df) to be able to read it in Pandas. 
     - Vaccine manufacturer names were standardized into 4-character IDs as follows:
         - 'Pfizer/BioNTech' : ['PFZR'],
         - 'Sinovac' : ['SNVC'],
         - 'Moderna' : ['MDRN'],
         - 'Oxford/AstraZeneca' : ['OXFD'],
         - 'Johnson&Johnson' : ['JSJS']
-    - 
+    - Vaccine dataset column headers were updated as follows:
+        - 'vaccine' : 'manufacturer_id'
+        - 'location' : 'country'
+    - A unique Manufacturers table was stored as a dataframe to be able to establish corresponding relationship
+    - The vaccine dataset summarizes vaccines administered by country and by manufacturers. 
 
+### Load
 
-## Load
+#Database use
+Available tables within the database:
+    - Population
+        - Provides population by country data
+    - Vaccine Manufacturers
+        - Provides visibility of into current vaccine manufacturers with approved vaccines worldwide.
+    - COVID Cases
+        - Provides data on daily number of Total cases, Active cases, and Total deaths by countries from February 2020 to April 2021. 
+    - Vaccine Distribution
+        - Provides data on daily vaccinations by country and by vaccine manufacturer from December 2020 to April 2021.
+
+This data was provided to allow for visibility into percentage of COVID-19 cases by country, by comparing total cases and total country population. Additionally, it allows to track the number of global vaccinations administered by country and vaccine manufacturer. The vaccine manufacturers data was pulled to show available vaccines and the reach that each one has had in helping contain the effects of the COVID-19 pandemic. 
+
+The data can also be used to understand the impact vaccinations have had on the number of cases and deaths since the vaccines started to be administered worldwide. Analysis can be performed to also compare specific countries data on how vaccination progress has impacted cases as compared to neighboring countries. 
+
 
 
 
