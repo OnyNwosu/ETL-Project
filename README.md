@@ -44,6 +44,15 @@ Given the current pandemic, we decided to base our ETL project on the amount of 
     - The vaccine dataset summarizes vaccines administered by country and by manufacturers. 
 
 ### Load
+The load process consisted of the following steps:
+- PGAdmin was used to create our database schema using the query tool
+    - The database was set up in accordance to the ERD provided above
+- Connected to the empty database in our Jupyter Notebook
+- Within Jupyter Notebook we used Pandas to push our dataframes into the database schema
+- Established an AWS RDS account to be used as our database host
+- The following connection string was used to establish the connection to AWS:
+rds_connection_string = f"mdaxc6:databootcamp@coviddb.cgctrcdsmwc0.us-east-2.rds.amazonaws.com:5432/covid_db"
+- We used the df.to_sql function to link all of our tables and datasets to the AWS host. s
 
 #Database use
 Available tables within the database:
