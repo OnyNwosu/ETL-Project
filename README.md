@@ -44,6 +44,8 @@ Given the current pandemic, we decided to base our ETL project on the amount of 
     - The vaccine dataset summarizes vaccines administered by country and by manufacturers. 
 
 ### Load
+A relational database structure was chosen given the datasets identified were interelated, and allowed us to establish corresponding relationships across the multiple tables created.
+
 The load process consisted of the following steps:
 - PGAdmin was used to create our database schema using the query tool
     - The database was set up in accordance to the ERD provided above
@@ -56,14 +58,14 @@ rds_connection_string = f"mdaxc6:databootcamp@coviddb.cgctrcdsmwc0.us-east-2.rds
 
 #Database use
 Available tables within the database:
-    - Population
-        - Provides population by country data
-    - Vaccine Manufacturers
-        - Provides visibility of into current vaccine manufacturers with approved vaccines worldwide.
-    - COVID Cases
-        - Provides data on daily number of Total cases, Active cases, and Total deaths by countries from February 2020 to April 2021. 
-    - Vaccine Distribution
-        - Provides data on daily vaccinations by country and by vaccine manufacturer from December 2020 to April 2021.
+- Population
+    - Provides population by country data
+- Vaccine Manufacturers
+    - Provides visibility of into current vaccine manufacturers with approved vaccines worldwide.
+- COVID Cases
+    - Provides data on daily number of Total cases, Active cases, and Total deaths by countries from February 2020 to April 2021. 
+- Vaccine Distribution
+    - Provides data on daily vaccinations by country and by vaccine manufacturer from December 2020 to April 2021.
 
 This data was provided to allow for visibility into percentage of COVID-19 cases by country, by comparing total cases and total country population. Additionally, it allows to track the number of global vaccinations administered by country and vaccine manufacturer. The vaccine manufacturers data was pulled to show available vaccines and the reach that each one has had in helping contain the effects of the COVID-19 pandemic. 
 
