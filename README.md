@@ -30,18 +30,30 @@ Given the current pandemic, we decided to base our ETL project on the amount of 
 
 - ### Vaccine Distributions
     - Downloaded the following dataset from Kaggle -> country_vaccinations_by_manufacturer.csv.
-    - The dataset was stored as a dataframe to be able to read it in Pandas
+    - The vaccine dataset was stored as a dataframe (vax_man_df) to be able to read it in Pandas. 
     - Vaccine manufacturer names were standardized into 4-character IDs as follows:
         - 'Pfizer/BioNTech' : ['PFZR'],
         - 'Sinovac' : ['SNVC'],
         - 'Moderna' : ['MDRN'],
         - 'Oxford/AstraZeneca' : ['OXFD'],
         - 'Johnson&Johnson' : ['JSJS']
-    - 
+    - Vaccine dataset column headers were updated as follows:
+        - 'vaccine' : 'manufacturer_id'
+        - 'location' : 'country'
+    - A unique Manufacturers table was stored as a dataframe to be able to establish corresponding relationship
+    - The vaccine dataset summarizes vaccines administered by country and by manufacturers. 
 
+### Load
 
-## Load
-
+#Database use
+Available tables within the database:
+    - Population
+        - This table can be used to access population by country data
+    - Vaccine Manufacturers
+        - The table provides visibility of into current vaccine manufacturers with approved vaccines worldwide.
+    - COVID Cases
+        - Provides data on daily number of Total cases, Active cases, and Total deaths by countries from Feb 2020 to April 2021. 
+    - Vaccine Distribution
 
 
 
