@@ -30,7 +30,7 @@ Given the current pandemic, we decided to base our ETL project on the amount of 
 
 - ### Vaccine Distributions
     - Downloaded the following dataset from Kaggle -> country_vaccinations_by_manufacturer.csv.
-    - The vaccine dataset was stored as a dataframe (vax_man_df) to be able to read it in Pandas. 
+    - The vaccine dataset was stored as a data-frame (vax_man_df) to be able to read it in Pandas. 
     - Vaccine manufacturer names were standardized into 4-character IDs as follows:
         - 'Pfizer/BioNTech' : ['PFZR'],
         - 'Sinovac' : ['SNVC'],
@@ -40,17 +40,18 @@ Given the current pandemic, we decided to base our ETL project on the amount of 
     - Vaccine dataset column headers were updated as follows:
         - 'vaccine' : 'manufacturer_id'
         - 'location' : 'country'
-    - A unique Manufacturers table was stored as a dataframe to be able to establish corresponding relationship
+    - A unique Manufacturers table was stored as a data-frame to be able to establish corresponding relationship
     - The vaccine dataset summarizes vaccines administered by country and by manufacturers. 
 
-### Load
-A relational database structure was chosen given the datasets identified were interelated, and allowed us to establish corresponding relationships across the multiple tables created.
+## Load
+
+A relational database structure was chosen given the datasets identified were interrelated, and allowed us to establish corresponding relationships across the multiple tables created.
 
 The load process consisted of the following steps:
 - PGAdmin was used to create our database schema using the query tool
     - The database was set up in accordance to the ERD provided above
 - Connected to the empty database in our Jupyter Notebook
-- Within Jupyter Notebook we used Pandas to push our dataframes into the database schema
+- Within Jupyter Notebook we used Pandas to push our data-frames into the database schema
 - Established an AWS RDS account to be used as our database host
 - The following connection string was used to establish the connection to AWS:
 rds_connection_string = f"mdaxc6:databootcamp@coviddb.cgctrcdsmwc0.us-east-2.rds.amazonaws.com:5432/covid_db"
@@ -62,7 +63,7 @@ Available tables within the database:
     - Provides population by country data
 - Vaccine Manufacturers
     - Provides visibility of into current vaccine manufacturers with approved vaccines worldwide.
-- COVID Cases
+- COVID-19 Cases
     - Provides data on daily number of Total cases, Active cases, and Total deaths by countries from February 2020 to April 2021. 
 - Vaccine Distribution
     - Provides data on daily vaccinations by country and by vaccine manufacturer from December 2020 to April 2021.
